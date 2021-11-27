@@ -1,6 +1,6 @@
 # BEDU_ML
 
-# :rocket:  Proyecto: <credit default>   
+# :rocket:  Proyecto: credit default
 **Curso de Ciencia de Datos, BEDU**   
 <Mauro Santiago>
   
