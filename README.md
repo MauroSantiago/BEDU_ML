@@ -1,8 +1,7 @@
 # BEDU_ML
-
-# :rocket:  Proyecto: credit default
+## :rocket:  Proyecto: Anlisis restaurante
 **Curso de Ciencia de Datos, BEDU**   
-<Mauro Santiago>
+*Mauro Santiago*
   
 <Imagen o vídeo que describa el proyecto>
   
