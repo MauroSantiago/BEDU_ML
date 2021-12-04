@@ -24,8 +24,8 @@ La información parte de abril del 2018 hasta Agosto del 2021. Estos se encuentr
   
 - Cargar los datos y unir en un solo archivo usando `pandas`
 - Con Python sobre su herramienta Jupyter Notebooks :
--- Visualizar el comporamiento de los datos separados por días de la semana y tambien con el cumplimiento de sus objetivos de ventas.
--- Realizar labores de predicción, clasificación, entre otras posibles.
+** Visualizar el comporamiento de los datos separados por días de la semana y tambien con el cumplimiento de sus objetivos de ventas. **
+** Realizar labores de predicción, clasificación, entre otras posibles. **
 - Determinar que campos nos permiten determinar si se cumple el objetivo de venta o no.
   
 ---
