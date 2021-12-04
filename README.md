@@ -13,10 +13,10 @@ Este proyecto está basado en información de un restaurante donde su fuerte pri
 
 La información parte de abril del 2018 hasta Agosto del 2021. Estos se encuentran en 4 archivos separados por año.
 
-[Info_2018](ventas_2018.csv)
-[Info_2019](ventas_2019.csv)
-[Info_2020](ventas_2020.csv)
-[Info_2021](ventas_2021.csv)
+- [Info_2018](ventas_2018.csv)
+- [Info_2019](ventas_2019.csv)
+- [Info_2020](ventas_2020.csv)
+- [Info_2021](ventas_2021.csv)
   
 ### :dart: Objetivos y Tareas
 ​
