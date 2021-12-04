@@ -53,6 +53,9 @@ La información parte de abril del 2018 hasta Agosto del 2021. Estos se encuentr
 - [log](05_LogisticRegression.ipynb)
 - [arbol](05_forest.ipynb)
 - [Naïve Bayes](06_Naïve Bayes.ipynb)
+
+# Clasificación no Supervisada
+- [kmeans](07_KMeans.ipynb)
   
 ---
   
