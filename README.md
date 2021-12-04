@@ -32,7 +32,7 @@ La información parte de abril del 2018 hasta Agosto del 2021. Estos se encuentr
 ​
 ## :ballot_box_with_check: Tarea 1 "Cargar Datos"
   
-[Cargarndo Datos](01_Cargando Datos.ipynb)
+- [Cargarndo Datos](01_Cargando Datos.ipynb)
   
 ---
 ​
