@@ -1,69 +1,90 @@
 # BEDU_ML
-## :rocket:  Proyecto: Anlisis restaurante
+## :rocket:  Proyecto: Clasificación de riesgo crediticio
 **Curso de Ciencia de Datos, BEDU**   
 *Mauro Santiago*
   
-<Imagen o vídeo que describa el proyecto>
+<![imagen](imagenes/dataset-card.jpg)>
   
 ---
   
 ## :capital_abcd: Introducción
-​
-Este proyecto está basado en información de un restaurante donde su fuerte principal es la venta de alitas y hamburguesas ubicada en una plaza comercial. 
 
-La información parte de abril del 2018 hasta Agosto del 2021. Estos se encuentran en 4 archivos separados por año.
+​Este proyecto está basado en el reto
 
-- [Info_2018](ventas_2018.csv)
-- [Info_2019](ventas_2019.csv)
-- [Info_2020](ventas_2020.csv)
-- [Info_2021](ventas_2021.csv)
-  
+Este proyecto está basado en el reto *German Credit Risk* disponible en la plataforma [Kaggle](https://www.kaggle.com/uciml/german-credit).
+Este proyecto incluye un conjuntos de datos:
+
+German_credit_data
+
+## Contexto
+
+El Datase contiene 1,000 entradas con 20 categorías. Estos datos fueron preparados por el Prof. Hofmann. En este, cada entrada representa a una persona que recibe un crédito de un banco. Cada persona se clasifica como riesgo crediticio bueno o malo según el conjunto de atributos. El enlace al conjunto de datos original se puede encontrar a continuación
+
+## Contenido
+
+El Dataset original es muy complicado de trabajar debido a su complicado sistema de categorías y símbolos , por tal motivo se trabajó con una Dataset previamente modificado por un tercero. Link[     ]
+
+Los atributos con los que se van a trabajar son :
+
+- Age (Variable numérica en años de los clietes) 
+- Sex (Variable categórica)
+- - Categorías: (masculino, femenino)
+- Job (Variable categórica) 
+- - Categorías numéricas: 0 - no calificado y no residente, 1 - no calificado y residente, 2 - calificado, 3 - altamente calificado
+- Housing (Variable categórica)
+- - Categorías: (own, rent, free)
+- Saving accounts (Variable categórica) 
+- - Categorías: (little, moderate, quite rich, rich)
+- Checking account (Varieble numérica en DM (Deutsch Mark/Marco Alemán)
+- Credit amount (Variable numérica en DM )
+- Duration (Variable numérica en meses)
+- Purpose (Variable categórica)
+- - Categorías: (car, furniture/equipment, radio/TV, domestic appliances, repairs, education, business, vacation/others)
+
+Variable Objetivo 
+
+- Risk (Variable categórica)
+- - Categorías: (good, bad)
+
 ### :dart: Objetivos y Tareas
 ​
 <Describir cada uno de los objetivos y de las tareas que realizarán/realizaron en el proyecto.>
-  
-- Cargar los datos y unir en un solo archivo usando `pandas`
-- Con Python sobre su herramienta Jupyter Notebooks :
-** Visualizar el comporamiento de los datos separados por días de la semana y tambien con el cumplimiento de sus objetivos de ventas. **
-** Realizar labores de predicción, clasificación, entre otras posibles. **
-- Determinar que campos nos permiten determinar si se cumple el objetivo de venta o no.
-  
----
-​
-## :ballot_box_with_check: Tarea 1 "Cargar Datos"
-  
-- [Cargarndo Datos](01_Cargando Datos.ipynb)
-  
----
-​
-## :ballot_box_with_check: Tarea 2 "Viz de datos"
-  
-- [Boxplot](02_Visualización de datos (boxplot).ipynb)
-- [Regresión Lineal](03_Viz datos RL .ipynb)
-  
----
-​
-## :ballot_box_with_check: Tarea 3 "Clasificar"
+- Con ayuda de __Python__ sobre su herramienta __Jupyter Notebooks__ se ealizarán las siguients tareas:
 
-# Reg Lin 
-  
-- [Regresión Lineal](04_Reg_lin.ipynb)
-  
-# Clasificación Supervisada
-- [log](05_LogisticRegression.ipynb)
-- [arbol](05_forest.ipynb)
-- [Naïve Bayes](06_Naïve Bayes.ipynb)
+- - Carga de datos usando `pandas`
+- - Análisis exploratorio de datos
+- - Labores de predicción
+- - Clasificación
+- - etc.
 
-# Clasificación no Supervisada
-- [kmeans](07_KMeans.ipynb)
-  
+-  Con la varile objetivo `Risk`se van a evaluar diferentes tipos de modelos de regresión y clasificación con el fin de poder predecir el perfil de riesgo de nuevos clientes.
+ 
 ---
-  
-## :ballot_box_with_check: Conclusiones
-  
-<Describir los resultados a los que llegó por medio de análisis exploratorio, y aplicación de los algoritmos de ML.>
 ​
+## :ballot_box_with_check: Carga y preprocesamiento de datos
   
+** Carga de datos **
+
+Con  __Jupyter Notebooks__  y el uso de `pandas` se carga el Dataset `scored_data`.
+
+** Preprocesamiento 1 **
+- [scored_data_all_bin.csv](Datasets/scored_data_all_bin.csv)
+
+1. Los datos `saving_accounts` y `checking_account` presentan valores Nan los cuanles se cambian a no una string de `no_info `, para poder trabajar con los datos.
+2. Se utiliza `LabelBinarizer` y `LabelEncoder` de  `sklearn.preprocessing` para procesar los datos categoricos a numerícos.
+3. Se guarda el archivo.
+....
+
+** Preprocesamiento 2 **
+- [scored_data_all_bin.csv](Datasets/scored_data_all_bin.csv)
+
+1. La variables numericas (`age`, `duration`, `credit_amount`) se trasforman a numericas.
+2. Con `get_dummies` se transforman los datos a binarios.
+3. Se guarda el archivo.
+.....
+
+
+
 ---
   
 ## :ballot_box_with_check: Trabajo a futuro
