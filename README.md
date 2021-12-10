@@ -244,6 +244,7 @@ Exactitud: 75.67%
 Sensibilidad: 87.08%
 Especificidad: 49.45%
 ```	
+La precision, exactitud y sensibilida son altos, nos unduca que el modelo ayuda a predecir a los clientes con un peril de bajo riesgo `good` con una especifidad moderada. EL modelo clasifica bien los casos `good` y moderadamente bien los clientes de mucho riesgo.
 	
 - Proceso de datos numero 2
 	
@@ -255,10 +256,10 @@ Exactitud: 70.67%
 Sensibilidad: 84.83%
 Especificidad: 37.08%
 ```	
-
+El segundo procesamiento de datos de comportan muy igual, solo que en este la especificidad baja un poco. Este modelo no ayuda a claisificar a los clietes de alto riesgo.
+	
 [Notebook](German_CR/01_Exploratorio.ipynb)
   
-	
 </p>
 </details>
 
@@ -275,6 +276,8 @@ Exactitud: 75.67%
 Sensibilidad: 86.54%
 Especificidad: 51.09&
 ```
+
+Los datos se comportan similar con el árbol mejorado un poco las métricas. 
 	
 - Proceso de datos numero 2
 	
@@ -286,7 +289,9 @@ Exactitud: 67.67%
 Sensibilidad: 93.1%
 Especificidad: 14.43&
 ```	
-
+	
+El modelo nos ayuda a detectar a clientes de perfl bajo de riesgo pero no ayuda a clasificar a los clientes de alto riesgo.
+	
 [Notebook](German_CR/naive_bayes.ipynb.ipynb)
   	
 </p>
@@ -305,6 +310,7 @@ Exactitud: 74.67%
 Sensibilidad: 92.75%
 Especificidad: 34.41%
 ```	
+El modelo mejora en la forma en claisificar a los clientes de poco riesgo 
 	
 - Proceso de datos numero 2
 	
@@ -316,7 +322,9 @@ Exactitud: 74.0%
 Sensibilidad: 84.78%
 Especificidad: 38.57%
 ```	
-
+EL modelo, con el segundo procesaiento de datos, mejoro bastante la forma en que puede describir a los clientes con poco reisgo crediticio
+	
+	
 [Notebook](German_CR/LogisticRegression.ipynb.ipynb.ipynb)
 
 	
@@ -338,6 +346,8 @@ Exactitud: 32.9%
 Sensibilidad: 14.43%
 Especificidad: 76.0%
 ```
+
+El modelo nos ayuda a clasificar a los clientes con alto riesgo `bad` con el primer procesamiento de datos
 	
 - Proceso de datos numero 2
 	
@@ -350,6 +360,7 @@ Sensibilidad: 68.86%
 Especificidad: 41.67%
 ```
 
+Con este modelo y procesamiento de datos el modelo describe muy bien los dos casos. `good` y `bad`
 
 [Notebook](German_CR/kmeans.ipynb.ipynb.ipynb)
   
@@ -362,4 +373,9 @@ Especificidad: 41.67%
 ## :ballot_box_with_check: Trabajo a futuro
   
 <Describir tareas pendientes que pueden ayudar a mejorar los resultados.>
+	
+-Trabajar con el dataset original para poder procesar la información de forma diferente y comparar resultados. 
+- Estudiar funciona de los los algoritmos ML (aplicaciones) 
+- Completar el dataset con  más información de clientes con riesgo alto, ya que se tienen nada mas 300 registros de 1000 clientes. 
+- Trabajar con dataset de restaurante de comida de alitas y hamburguesas (segudo proyecto) 
   
