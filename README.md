@@ -3,7 +3,7 @@
 **Curso de Ciencia de Datos, BEDU**   
 *Mauro Santiago*
   
-![imagen](imagenes/dataset-card.jpg)
+![imagen](imagenes/cred.jpg)
   
 ---
   
