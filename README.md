@@ -3,18 +3,16 @@
 **Curso de Ciencia de Datos, BEDU**   
 *Mauro Santiago*
   
-<![imagen](imagenes/dataset-card.jpg)>
+![imagen](imagenes/dataset-card.jpg)
   
 ---
   
 ## :capital_abcd: Introducción
 
-​Este proyecto está basado en el reto
-
 Este proyecto está basado en el reto *German Credit Risk* disponible en la plataforma [Kaggle](https://www.kaggle.com/uciml/german-credit).
 Este proyecto incluye un conjuntos de datos:
 
-German_credit_data
+- German_credit_data
 
 ## Contexto
 
@@ -49,14 +47,13 @@ Variable Objetivo
 ### :dart: Objetivos y Tareas
 ---
 ​
-<Describir cada uno de los objetivos y de las tareas que realizarán/realizaron en el proyecto.>
-- Con ayuda de __Python__ sobre su herramienta __Jupyter Notebooks__ se ealizarán las siguients tareas:
+Con ayuda de __Python__ sobre su herramienta __Jupyter Notebooks__ se ealizarán las siguients tareas:
 
-- - Carga de datos usando `pandas`
-- - Análisis exploratorio de datos
-- - Labores de predicción
-- - Clasificación
-- - etc.
+- Carga de datos usando `pandas`
+- Análisis exploratorio de datos
+- Labores de predicción
+- Clasificación
+- etc.
 
 -  Con la varile objetivo `Risk`se van a evaluar diferentes tipos de modelos de regresión y clasificación con el fin de poder predecir el perfil de riesgo de nuevos clientes.
  
@@ -64,20 +61,20 @@ Variable Objetivo
 ​
 ## :ballot_box_with_check: Carga y preprocesamiento de datos
   
-** Carga de datos **
+**Carga de datos**
 
 Con  __Jupyter Notebooks__  y el uso de `pandas` se carga el Dataset `scored_data`.
 
-** Preprocesamiento 1 **
-- [scored_data_all_bin.csv](Datasets/scored_data_all_bin.csv)
+**Preprocesamiento 1**
+- [scored_data_bin.csv](../Datasets/scored_data_bin.csv)
 
 1. Los datos `saving_accounts` y `checking_account` presentan valores Nan los cuanles se cambian a no una string de `no_info `, para poder trabajar con los datos.
 2. Se utiliza `LabelBinarizer` y `LabelEncoder` de  `sklearn.preprocessing` para procesar los datos categoricos a numerícos.
 3. Se guarda el archivo.
 ....
 
-** Preprocesamiento 2 **
-- [scored_data_all_bin.csv](Datasets/scored_data_all_bin.csv)
+**Preprocesamiento 2**
+- [scored_data_all_bin.csv](../Datasets/scored_data_all_bin.csv)
 
 1. La variables numericas (`age`, `duration`, `credit_amount`) se trasforman a numericas.
 2. Con `get_dummies` se transforman los datos a binarios.
