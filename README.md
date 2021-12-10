@@ -237,21 +237,24 @@ Para analizar los resultados se usó una matriz de confusión.
 - Proceso de datos numero 1
 	
 ![imagen](imagenes/arbol_1.jpg)
-
+	
+```
 Precision: 79.82%
 Exactitud: 75.67%
 Sensibilidad: 87.08%
 Especificidad: 49.45%
+```	
 	
 - Proceso de datos numero 2
 	
 ![imagen](imagenes/arbol_2.jpg)
-
+	
+```
 Precision: 76.17%
 Exactitud: 70.67%
 Sensibilidad: 84.83%
 Especificidad: 37.08%
-	
+```	
 
 [Notebook](German_CR/01_Exploratorio.ipynb)
   
@@ -266,24 +269,26 @@ Especificidad: 37.08%
 	
 ![imagen](imagenes/NB_1.jpg)
 
+```
 Precision: 80.0%
 Exactitud: 75.67%
 Sensibilidad: 86.54%
 Especificidad: 51.09&
+```
 	
 - Proceso de datos numero 2
 	
 ![imagen](imagenes/NB_2.jpg)
 
+```
 Precision: 69.49%
 Exactitud: 67.67%
 Sensibilidad: 93.1%
 Especificidad: 14.43&
-	
+```	
 
 [Notebook](German_CR/naive_bayes.ipynb.ipynb)
-  
-	
+  	
 </p>
 </details>
 
@@ -293,21 +298,24 @@ Especificidad: 14.43&
 - Proceso de datos numero 1
 	
 ![imagen](imagenes/rl_1.jpg)
-
+	
+```
 Precision: 75.89%
 Exactitud: 74.67%
 Sensibilidad: 92.75%
 Especificidad: 34.41%
+```	
 	
 - Proceso de datos numero 2
 	
 ![imagen](imagenes/rl_2.jpg)
 
+```
 Precision: 81.93%
 Exactitud: 74.0%
 Sensibilidad: 84.78%
 Especificidad: 38.57%
-	
+```	
 
 [Notebook](German_CR/LogisticRegression.ipynb.ipynb.ipynb)
 
@@ -323,20 +331,24 @@ Especificidad: 38.57%
 - Proceso de datos numero 1
 	
 ![imagen](imagenes/km_1.jpg)
-
+	
+```
 Precision: 58.38%
 Exactitud: 32.9%
 Sensibilidad: 14.43%
 Especificidad: 76.0%
+```
 	
 - Proceso de datos numero 2
 	
 ![imagen](imagenes/km_2.jpg)
 
+```
 Precision: 73.36%
 Exactitud: 60.7%
 Sensibilidad: 68.86%
 Especificidad: 41.67%
+```
 
 
 [Notebook](German_CR/kmeans.ipynb.ipynb.ipynb)
