@@ -172,8 +172,181 @@ Con  __Jupyter Notebooks__  y el uso de `pandas` se carga el Dataset `scored_dat
 </p>
 </details>
 
+</p>
+</details>
 
+<details><summary><strong>Crosstab </em></strong> </summary>
+	<p>
+     
+![imagen](imagenes/Crosstab_1.jpg)
+
+- En este caso en ambos casos los clientes con una cuenta pequeña de ahorros tienen un perfil de alto riesgo.
+- Los hombres tienen a mayor tendencia a tener un perfil de alto riesgo.
+	
+![imagen](imagenes/Crosstab_2.jpg)
+
+- Los clientes con casa propia son los que tienen la mayoria de los casos de alto riesgo en ambos casos (Masculinos y femeninos) , esto podría no ser un indicador optimo, ya que esto nos indica nada as que el cliente tiene propiedades a su nombre y no su calidad como pagador a sus deudas.
+	
+![imagen](imagenes/Crosstab_3.jpg)
+
+- Los clientes con el trabajo tipo 2 sin importar si es femenino o masculino tienen la mayor cantidad de clientes de perfil de alto riesgo
+
+</p>
+</details>
+
+[Notebook](German_CR/01_Exploratorio.ipynb)
+---
+## :ballot_box_with_check: Clasificación.
+
+
+Para realizar el entrenamiento con todos los modelos se siguieron los siguientes pasos:
+
+1. Como datos de entrada se eligieron todos los campos menos la columna que nos indica el estado de riesgo del cliente.
+
+1. Como dato de salida se eligió únicamente el estado de riesgo de cliente.
+
+1. Separar el conjunto de datos en entrenamiento y prueba (70%/30%).
+
+1. Realizar el entrenamiento.
+
+Para analizar los resultados se usó una matriz de confusión.
+
+- Una interpretación de los resultados de esta matriz, se puede dar mediante las siguientes fórmulas:
+
+    1. Precisión.
+   
+   __precision__ = VP / (VP + FP)
+
+    2. Exactitud.
+   
+   __exactitud__ = (VP + VN) / (VP + FN + FP + VN)
+
+    3. Sensibilidad.
+   
+   __sensibilidad__ = VP / (VP + FN)
+
+    4. Especificidad: De todas las clasificaciones negativas que había en realidad, ¿cuántas fueron clasificadas correctamente como negativas?
+   
+   __especificidad__ = VN / (VN + FP)
+   
+ ## Clasificación Supervisada ##
+ 
+ <details><summary><strong>Árboles de Decisión </em></strong> </summary>
+	<p>
+	
+- Proceso de datos numero 1
+	
+![imagen](imagenes/arbol_1.jpg)
+
+Precision: 79.82%
+Exactitud: 75.67%
+Sensibilidad: 87.08%
+Especificidad: 49.45%
+	
+- Proceso de datos numero 2
+	
+![imagen](imagenes/arbol_2.jpg)
+
+Precision: 76.17%
+Exactitud: 70.67%
+Sensibilidad: 84.83%
+Especificidad: 37.08%
+	
+
+[Notebook](German_CR/01_Exploratorio.ipynb)
   
+	
+</p>
+</details>
+
+ <details><summary><strong>Naïve Bayes  </em></strong> </summary>
+	<p>
+	
+- Proceso de datos numero 1
+	
+![imagen](imagenes/NB_1.jpg)
+
+Precision: 80.0%
+Exactitud: 75.67%
+Sensibilidad: 86.54%
+Especificidad: 51.09&
+	
+- Proceso de datos numero 2
+	
+![imagen](imagenes/NB_2.jpg)
+
+Precision: 69.49%
+Exactitud: 67.67%
+Sensibilidad: 93.1%
+Especificidad: 14.43&
+	
+
+[Notebook](German_CR/naive_bayes.ipynb.ipynb)
+  
+	
+</p>
+</details>
+
+ <details><summary><strong>Regresión logística   </em></strong> </summary>
+	<p>
+	
+- Proceso de datos numero 1
+	
+![imagen](imagenes/rl_1.jpg)
+
+Precision: 75.89%
+Exactitud: 74.67%
+Sensibilidad: 92.75%
+Especificidad: 34.41%
+	
+- Proceso de datos numero 2
+	
+![imagen](imagenes/rl_2.jpg)
+
+Precision: 81.93%
+Exactitud: 74.0%
+Sensibilidad: 84.78%
+Especificidad: 38.57%
+	
+
+[Notebook](German_CR/LogisticRegression.ipynb.ipynb.ipynb)
+
+	
+</p>
+</details>
+
+ ## Clasificación No Supervisada ##
+ 
+ <details><summary><strong>K-Means  </em></strong> </summary>
+	<p>
+	
+- Proceso de datos numero 1
+	
+![imagen](imagenes/km_1.jpg)
+
+Precision: 58.38%
+Exactitud: 32.9%
+Sensibilidad: 14.43%
+Especificidad: 76.0%
+	
+- Proceso de datos numero 2
+	
+![imagen](imagenes/km_2.jpg)
+
+Precision: 73.36%
+Exactitud: 60.7%
+Sensibilidad: 68.86%
+Especificidad: 41.67%
+
+
+[Notebook](German_CR/kmeans.ipynb.ipynb.ipynb)
+  
+	
+</p>
+</details>
+
+---
+
 ## :ballot_box_with_check: Trabajo a futuro
   
 <Describir tareas pendientes que pueden ayudar a mejorar los resultados.>
