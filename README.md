@@ -47,6 +47,7 @@ Variable Objetivo
 - - Categorías: (good, bad)
 
 ### :dart: Objetivos y Tareas
+---
 ​
 <Describir cada uno de los objetivos y de las tareas que realizarán/realizaron en el proyecto.>
 - Con ayuda de __Python__ sobre su herramienta __Jupyter Notebooks__ se ealizarán las siguients tareas:
